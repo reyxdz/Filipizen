@@ -65,7 +65,7 @@
 
 .province-lgus__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   gap: var(--space-lg);
 }
 
@@ -122,14 +122,14 @@
   }
 
   .province-lgus__grid {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: var(--space-md);
   }
 }
 
 @media (max-width: 480px) {
   .province-lgus__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: var(--space-sm);
   }
 }

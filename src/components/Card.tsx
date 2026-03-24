@@ -4,12 +4,11 @@ interface CardProps {
   image?: string;
   title: string;
   subtitle?: string;
-  transactions?: string[];
   onClick?: () => void;
   className?: string;
 }
 
-function Card({ image, title, subtitle, transactions, onClick, className = '' }: CardProps) {
+function Card({ image, title, subtitle, onClick, className = '' }: CardProps) {
   return (
     <div
       className={`card ${onClick ? 'card--clickable' : ''} ${className}`}
@@ -31,15 +30,6 @@ function Card({ image, title, subtitle, transactions, onClick, className = '' }:
       <div className="card__content">
         <h3 className="card__title">{title}</h3>
         {subtitle && <p className="card__subtitle">{subtitle}</p>}
-        {transactions && transactions.length > 0 && (
-          <div className="card__transactions">
-            {transactions.map((t, idx) => (
-              <span key={idx} className="card__transaction-pill">
-                {t}
-              </span>
-            ))}
-          </div>
-        )}
       </div>
     </div>
   );

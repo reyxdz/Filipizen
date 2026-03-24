@@ -14,7 +14,6 @@ export interface LGU {
   name: string;
   seal: string;
   slug: string;
-  transactions?: string[];
 }
 
 export interface ProvinceLGUs {
@@ -23,16 +22,16 @@ export interface ProvinceLGUs {
 
 export const lgus: ProvinceLGUs = {
   aklan: [
-    { name: 'Aklan Province', seal: aklanProvince, slug: 'aklan-province', transactions: ['Real Property', 'Payment Order'] },
-    { name: 'Altavas', seal: altavas, slug: 'altavas', transactions: ['Business', 'Real Property', 'Civil Registry'] },
-    { name: 'Banga', seal: banga, slug: 'banga', transactions: ['Business', 'Real Property', 'Building Permit'] },
-    { name: 'Ibajay', seal: ibajay, slug: 'ibajay', transactions: ['Local Taxes', 'Market Fees'] },
-    { name: 'Kalibo', seal: kalibo, slug: 'kalibo', transactions: ['Business', 'Real Property', 'Local Taxes', 'Traffic Violations'] },
-    { name: 'Lezo', seal: lezo, slug: 'lezo', transactions: ['Real Property', 'Civil Registry'] },
-    { name: 'Malay', seal: malay, slug: 'malay', transactions: ['Business', 'Real Property', 'Environmental Fee'] },
-    { name: 'Nabas', seal: nabas, slug: 'nabas', transactions: ['Business', 'Real Property'] },
-    { name: 'New Washington', seal: newWashington, slug: 'new-washington', transactions: ['Business', 'Payment Order'] },
-    { name: 'Numancia', seal: numancia, slug: 'numancia', transactions: ['Real Property', 'Building Permit'] },
-    { name: 'Tangalan', seal: tangalan, slug: 'tangalan', transactions: ['Business', 'Real Property', 'Local Taxes'] },
+    { name: 'Aklan Province', seal: aklanProvince, slug: 'aklan-province' },
+    { name: 'Altavas', seal: altavas, slug: 'altavas' },
+    { name: 'Banga', seal: banga, slug: 'banga' },
+    { name: 'Ibajay', seal: ibajay, slug: 'ibajay' },
+    { name: 'Kalibo', seal: kalibo, slug: 'kalibo' },
+    { name: 'Lezo', seal: lezo, slug: 'lezo' },
+    { name: 'Malay', seal: malay, slug: 'malay' },
+    { name: 'Nabas', seal: nabas, slug: 'nabas' },
+    { name: 'New Washington', seal: newWashington, slug: 'new-washington' },
+    { name: 'Numancia', seal: numancia, slug: 'numancia' },
+    { name: 'Tangalan', seal: tangalan, slug: 'tangalan' },
   ],
 };
