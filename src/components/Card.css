@@ -6,6 +6,9 @@
   transition:
     transform var(--transition-base),
     box-shadow var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .card--clickable {
@@ -41,6 +44,9 @@
 .card__content {
   padding: var(--space-md);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .card__title {
@@ -54,4 +60,23 @@
   font-size: 0.8rem;
   color: var(--text-light);
   margin-top: var(--space-xs);
+}
+
+.card__transactions {
+  margin-top: auto;
+  padding-top: var(--space-md);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  justify-content: center;
+}
+
+.card__transaction-pill {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--primary-dark);
+  background: var(--primary-light);
+  padding: 4px 8px;
+  border-radius: 50px;
+  white-space: nowrap;
 }

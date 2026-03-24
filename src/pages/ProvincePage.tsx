@@ -62,6 +62,7 @@ function ProvincePage() {
                   key={lgu.slug}
                   image={lgu.seal}
                   title={lgu.name}
+                  transactions={lgu.transactions}
                 />
               ))}
             </div>
