@@ -1,0 +1,135 @@
+/* ========================================
+   ProvincePage Styles
+   ======================================== */
+
+/* Province Header */
+.province-header {
+  position: relative;
+  padding: var(--space-2xl) 0;
+  background: linear-gradient(135deg, #064E3B 0%, #059669 100%);
+  overflow: hidden;
+}
+
+.province-header__bg-pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.04) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.province-header__content {
+  position: relative;
+}
+
+.province-header__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition:
+    background var(--transition-fast),
+    border-color var(--transition-fast);
+  margin-bottom: var(--space-lg);
+}
+
+.province-header__back:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.province-header__title {
+  color: #fff;
+  font-size: 2.25rem;
+  margin-bottom: var(--space-sm);
+}
+
+.province-header__subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.05rem;
+}
+
+/* LGU Grid */
+.province-lgus {
+  padding: var(--space-3xl) 0;
+}
+
+.province-lgus__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-lg);
+}
+
+/* Coming Soon */
+.province-lgus__coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-3xl) 0;
+  gap: var(--space-md);
+}
+
+.province-lgus__coming-soon-icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-sm);
+}
+
+.province-lgus__coming-soon h3 {
+  font-size: 1.5rem;
+}
+
+.province-lgus__coming-soon p {
+  max-width: 420px;
+  color: var(--text-light);
+}
+
+.province-lgus__coming-soon strong {
+  color: var(--primary-dark);
+}
+
+/* Not Found */
+.province-page__not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-3xl) 0;
+  gap: var(--space-md);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .province-header {
+    padding: var(--space-xl) 0;
+  }
+
+  .province-header__title {
+    font-size: 1.65rem;
+  }
+
+  .province-lgus {
+    padding: var(--space-2xl) 0;
+  }
+
+  .province-lgus__grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: var(--space-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .province-lgus__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+  }
+}
