@@ -123,6 +123,9 @@ import sanIsidroDavaoDelNorte from '../assets/Images/provinces/davaoDelNorte/san
 import stoTomas from '../assets/Images/provinces/davaoDelNorte/stoTomas.png';
 import talaingod from '../assets/Images/provinces/davaoDelNorte/talaingod.png';
 
+// EASTERN SAMAR PROVINCE SEALS //
+import boronganCity from '../assets/Images/provinces/easternSamar/boronganCity.png';
+
 
 export interface LGU {
   name: string;
@@ -259,5 +262,8 @@ export const lgus: ProvinceLGUs = {
     { name: 'San Isidro', seal: sanIsidroDavaoDelNorte, slug: 'san-isidro' },
     { name: 'Santo Tomas', seal: stoTomas, slug: 'santo-tomas' },
     { name: 'Talaingod', seal: talaingod, slug: 'talaingod' },
+  ],
+  easternSamar: [
+    { name: 'Borongan City', seal: boronganCity, slug: 'borongan-city' },
   ],
 };
