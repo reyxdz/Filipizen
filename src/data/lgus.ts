@@ -107,6 +107,10 @@ import carmenCebu from '../assets/Images/provinces/cebu/carmen.png';
 import dalaguete from '../assets/Images/provinces/cebu/dalaguete.png';
 import danaoCity from '../assets/Images/provinces/cebu/danaoCity.png';
 
+// DAVAO ORIENTAL PROVINCE SEALS //
+import banaybanay from '../assets/Images/provinces/davaoOriental/banaybanay.png';
+import davaoOrientalProvince from '../assets/Images/provinces/davaoOriental/davaoOrientalProvince.png';
+
 
 export interface LGU {
   name: string;
@@ -227,5 +231,9 @@ export const lgus: ProvinceLGUs = {
     { name: 'Carmen', seal: carmenCebu, slug: 'carmen' },
     { name: 'Dalaguete', seal: dalaguete, slug: 'dalaguete' },
     { name: 'Danao City', seal: danaoCity, slug: 'danao-city' },
+  ],
+  davaoOriental: [
+    { name: 'Banaybanay', seal: banaybanay, slug: 'banay-banay' },
+    { name: 'Davao Oriental Province', seal: davaoOrientalProvince, slug: 'davao-oriental-province' },
   ],
 };

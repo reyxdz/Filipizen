@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Input from '../components/Input';
 import Button from '../components/Button';
@@ -13,6 +14,8 @@ function TransactionPage() {
     transactionSlug: string;
   }>();
   const navigate = useNavigate();
+  const [step, setStep] = useState(1);
+  const [appType, setAppType] = useState('new');
 
   const province = provinces.find((p) => p.slug === provinceSlug);
   const provinceLGUs = provinceSlug ? lgus[provinceSlug] : undefined;
@@ -107,22 +110,50 @@ function TransactionPage() {
               </>
             )}
 
-            {(transaction.slug === 'new-business' || transaction.slug === 'renew-business') && (
+            {(transaction.slug === 'new-business' || transaction.slug === 'renew-business') && step === 1 && (
               <>
                 <div className="transaction-card__header">
                   <h3 className="transaction-card__subtitle">Select Application Type</h3>
                 </div>
 
-                <form className="transaction-form" onSubmit={(e) => e.preventDefault()}>
+                <form className="transaction-form" onSubmit={(e) => {
+                  e.preventDefault();
+                  if (appType === 'new') {
+                    setStep(2);
+                  }
+                }}>
                   <div className="transaction-form__fields radio-group">
                     <label className="radio-label">
-                      <input type="radio" name="applicationType" value="new" defaultChecked />
+                      <input 
+                        type="radio" 
+                        name="applicationType" 
+                        value="new" 
+                        checked={appType === 'new'}
+                        onChange={(e) => setAppType(e.target.value)}
+                      />
                       <span>Create New Application</span>
                     </label>
                     <label className="radio-label">
-                      <input type="radio" name="applicationType" value="resume" />
+                      <input 
+                        type="radio" 
+                        name="applicationType" 
+                        value="resume" 
+                        checked={appType === 'resume'}
+                        onChange={(e) => setAppType(e.target.value)}
+                      />
                       <span>Resume Pending Application</span>
                     </label>
+                    {appType === 'resume' && (
+                      <div style={{ paddingLeft: '28px', paddingTop: '4px' }}>
+                        <div className="input-wrapper" style={{ marginBottom: 0 }}>
+                          <input 
+                            type="text" 
+                            className="input-field" 
+                            placeholder="Application Tracking No." 
+                          />
+                        </div>
+                      </div>
+                    )}
                   </div>
 
                   <div className="transaction-form__actions">
@@ -134,8 +165,46 @@ function TransactionPage() {
                       CANCEL
                     </button>
                     <button
+                      type={appType === 'new' ? 'submit' : 'button'}
+                      className={appType === 'new' ? 'transaction-btn transaction-btn--primary' : 'transaction-btn transaction-btn--next'}
+                      disabled={appType === 'resume'}
+                    >
+                      NEXT
+                    </button>
+                  </div>
+                </form>
+              </>
+            )}
+
+            {(transaction.slug === 'new-business' || transaction.slug === 'renew-business') && step === 2 && (
+              <>
+                <div className="transaction-card__header">
+                  <h3 className="transaction-card__subtitle">Contact Verification</h3>
+                  <p className="transaction-card__desc">
+                    A validation key will be sent to your email or mobile phone. Please make sure your email is valid and you have access to it.
+                  </p>
+                </div>
+
+                <form className="transaction-form" onSubmit={(e) => e.preventDefault()}>
+                  <div className="transaction-form__fields">
+                    <Input label="Full Name*" type="text" placeholder="" />
+                    <Input label="Address*" type="text" placeholder="" />
+                    <Input label="Email Address*" type="email" placeholder="" />
+                    <Input label="Mobile No." type="tel" placeholder="(0000) 000-0000" />
+                  </div>
+
+                  <div className="transaction-form__actions">
+                    <button
                       type="button"
-                      className="transaction-btn transaction-btn--primary"
+                      className="transaction-btn transaction-btn--back"
+                      onClick={() => setStep(1)}
+                    >
+                      BACK
+                    </button>
+                    <button
+                      type="button"
+                      className="transaction-btn transaction-btn--next"
+                      disabled
                     >
                       NEXT
                     </button>
