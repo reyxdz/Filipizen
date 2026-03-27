@@ -59,32 +59,34 @@ function LguPage() {
       {/* Transactions Section */}
       <section className="lgu-transactions">
         <div className="container">
-          <div className="lgu-transactions__header">
-            <h2 className="lgu-transactions__title">Select Transaction</h2>
-          </div>
+          <div className="lgu-transactions__inner">
+            <div className="lgu-transactions__header">
+              <h2 className="lgu-transactions__title">Select Transaction</h2>
+            </div>
 
-          <div className="lgu-transactions__grid">
-            {lguTransactions.map((group) => (
-              <div key={group.category} className="transaction-group">
-                <h3 className="transaction-group__title">{group.category}</h3>
-                <div className="transaction-list">
-                  {group.items.map((item) => (
-                    <a href={item.path} key={item.title} className="transaction-item">
-                      <span className="transaction-item__text">{item.title}</span>
-                      <svg className="transaction-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <polyline points="9 18 15 12 9 6" />
-                      </svg>
-                    </a>
-                  ))}
+            <div className="lgu-transactions__grid">
+              {lguTransactions.map((group) => (
+                <div key={group.category} className="transaction-group">
+                  <h3 className="transaction-group__title">{group.category}</h3>
+                  <div className="transaction-list">
+                    {group.items.map((item) => (
+                      <a href={item.path} key={item.title} className="transaction-item">
+                        <span className="transaction-item__text">{item.title}</span>
+                        <svg className="transaction-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <polyline points="9 18 15 12 9 6" />
+                        </svg>
+                      </a>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
 
-          <div className="lgu-transactions__actions">
-            <Button variant="outline" className="lgu-transactions__search-btn">
-              SEARCH PAYMENTS
-            </Button>
+            <div className="lgu-transactions__actions">
+              <Button variant="outline" className="lgu-transactions__search-btn">
+                SEARCH PAYMENTS
+              </Button>
+            </div>
           </div>
         </div>
       </section>

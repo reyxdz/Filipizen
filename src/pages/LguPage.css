@@ -87,6 +87,11 @@
   background-color: var(--bg);
 }
 
+.lgu-transactions__inner {
+  max-width: 800px;
+  margin: 0 auto; /* Centers the content block */
+}
+
 .lgu-transactions__header {
   margin-bottom: var(--space-xl);
 }
@@ -98,8 +103,8 @@
 }
 
 .lgu-transactions__grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: var(--space-2xl);
   margin-bottom: var(--space-2xl);
 }
@@ -180,12 +185,6 @@
 }
 
 /* Responsive */
-@media (min-width: 768px) {
-  .lgu-transactions__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (max-width: 768px) {
   .lgu-header__content {
     flex-direction: column;
