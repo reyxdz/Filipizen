@@ -70,6 +70,24 @@ import dangcagan from '../assets/Images/provinces/bukidnon/dangcagan.png';
 import kibawe from '../assets/Images/provinces/bukidnon/kibawe.png';
 import kitaotao from '../assets/Images/provinces/bukidnon/kitaotao.png';
 
+// CAMARINES SUR PROVINCE SEALS //
+import baao from '../assets/Images/provinces/camarinesSur/baao.png';
+import balatan from '../assets/Images/provinces/camarinesSur/balatan.png';
+import bato from '../assets/Images/provinces/camarinesSur/bato.png';
+import bombon from '../assets/Images/provinces/camarinesSur/bombon.png';
+import calabanga from '../assets/Images/provinces/camarinesSur/calabanga.png';
+import caramoan from '../assets/Images/provinces/camarinesSur/caramoan.png';
+import irigaCity from '../assets/Images/provinces/camarinesSur/irigaCity.png';
+import libmanan from '../assets/Images/provinces/camarinesSur/libmanan.png';
+import lupi from '../assets/Images/provinces/camarinesSur/lupi.png';
+import magarao from '../assets/Images/provinces/camarinesSur/magarao.png';
+import nabua from '../assets/Images/provinces/camarinesSur/nabua.png';
+import nagaCity from '../assets/Images/provinces/camarinesSur/nagaCity.png';
+import pasacao from '../assets/Images/provinces/camarinesSur/pasacao.png';
+import ragay from '../assets/Images/provinces/camarinesSur/ragay.png';
+import sanFernando from '../assets/Images/provinces/camarinesSur/sanFernando.png';
+import sipocot from '../assets/Images/provinces/camarinesSur/sipocot.png';
+
 
 export interface LGU {
   name: string;
@@ -153,5 +171,23 @@ export const lgus: ProvinceLGUs = {
     { name: 'Dangcagan', seal: dangcagan, slug: 'dangcagan' },
     { name: 'Kibawe', seal: kibawe, slug: 'kibawe' },
     { name: 'Kitaotao', seal: kitaotao, slug: 'kitaotao' },
+  ],
+  camarinesSur: [
+    { name: 'Baao', seal: baao, slug: 'baao' },
+    { name: 'Balatan', seal: balatan, slug: 'balatan' },
+    { name: 'Bato', seal: bato, slug: 'bato' },
+    { name: 'Bombon', seal: bombon, slug: 'bombon' },
+    { name: 'Calabanga', seal: calabanga, slug: 'calabanga' },
+    { name: 'Caramoan', seal: caramoan, slug: 'caramoan' },
+    { name: 'Iriga City', seal: irigaCity, slug: 'iriga-city' },
+    { name: 'Libmanan', seal: libmanan, slug: 'libmanan' },
+    { name: 'Lupi', seal: lupi, slug: 'lupi' },
+    { name: 'Magarao', seal: magarao, slug: 'magarao' },
+    { name: 'Nabua', seal: nabua, slug: 'nabua' },
+    { name: 'Naga City', seal: nagaCity, slug: 'naga-city' },
+    { name: 'Pasacao', seal: pasacao, slug: 'pasacao' },
+    { name: 'Ragay', seal: ragay, slug: 'ragay' },
+    { name: 'San Fernando', seal: sanFernando, slug: 'san-fernando' },
+    { name: 'Sipocot', seal: sipocot, slug: 'sipocot' },
   ],
 };

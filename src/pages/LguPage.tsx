@@ -51,7 +51,7 @@ function LguPage() {
               <path d="M19 12H5" />
               <polyline points="12 19 5 12 12 5" />
             </svg>
-            Back to {province.name}
+            Back
           </button>
         </div>
       </section>
