@@ -178,6 +178,10 @@ import tagoloan from '../assets/Images/provinces/misamisOriental/tagoloan.png';
 import cadizCity from '../assets/Images/provinces/negrosOccidental/cadizCity.png';
 import sanCarlosCity from '../assets/Images/provinces/negrosOccidental/sanCarlosCity.png';
 
+// NEGROS ORIENTAL PROVINCE SEALS //
+import bayawanCity from '../assets/Images/provinces/negrosOriental/bayawanCity.png';
+import tanjayCity from '../assets/Images/provinces/negrosOriental/tanjayCity.png';
+
 
 export interface LGU {
   name: string;
@@ -369,5 +373,9 @@ export const lgus: ProvinceLGUs = {
   negrosOccidental: [
     { name: 'Cadiz City', seal: cadizCity, slug: 'cadiz-city' },
     { name: 'San Carlos City', seal: sanCarlosCity, slug: 'san-carlos-city' },
+  ],
+  negrosOriental: [
+    { name: 'Bayawan City', seal: bayawanCity, slug: 'bayawan-city' },
+    { name: 'Tanjay City', seal: tanjayCity, slug: 'tanjay-city' },
   ]
 };
