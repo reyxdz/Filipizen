@@ -157,6 +157,24 @@
   color: var(--primary);
 }
 
+.transaction-item--disabled {
+  cursor: pointer;
+  background-color: #fafafa;
+  color: var(--text-light);
+}
+
+.transaction-item--disabled:hover {
+  transform: none;
+  border-color: rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01);
+  color: var(--text-light);
+}
+
+.transaction-item--disabled:hover .transaction-item__icon {
+  transform: none;
+  color: rgba(6, 78, 59, 0.4);
+}
+
 /* Actions */
 .lgu-transactions__actions {
   padding-top: var(--space-xl);

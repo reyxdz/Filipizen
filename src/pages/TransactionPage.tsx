@@ -66,38 +66,83 @@ function TransactionPage() {
       <section className="transaction-content">
         <div className="container transaction-content__inner">
           <div className="transaction-card">
-            <h2 className="transaction-card__title">{transaction.title}</h2>
+            <h2 className="transaction-card__title">
+              {transaction.slug === 'new-business' && 'New Business Registration'}
+              {transaction.slug === 'renew-business' && 'Business Renewal Application'}
+              {transaction.slug !== 'new-business' && transaction.slug !== 'renew-business' && transaction.title}
+            </h2>
             
-            <div className="transaction-card__header">
-              <h3 className="transaction-card__subtitle">Email Verification</h3>
-              <p className="transaction-card__desc">
-                A validation key will be sent to your email or mobile phone. Please make sure your email is valid and you have access to it.
-              </p>
-            </div>
+            {transaction.slug === 'bpls-billing' && (
+              <>
+                <div className="transaction-card__header">
+                  <h3 className="transaction-card__subtitle">Email Verification</h3>
+                  <p className="transaction-card__desc">
+                    A validation key will be sent to your email or mobile phone. Please make sure your email is valid and you have access to it.
+                  </p>
+                </div>
 
-            <form className="transaction-form" onSubmit={(e) => e.preventDefault()}>
-              <div className="transaction-form__fields">
-                <Input label="Email Address" type="email" placeholder="" />
-                <Input label="Mobile No." type="tel" placeholder="(0000) 000-0000" />
-              </div>
+                <form className="transaction-form" onSubmit={(e) => e.preventDefault()}>
+                  <div className="transaction-form__fields">
+                    <Input label="Email Address" type="email" placeholder="" />
+                    <Input label="Mobile No." type="tel" placeholder="(0000) 000-0000" />
+                  </div>
 
-              <div className="transaction-form__actions">
-                <button
-                  type="button"
-                  className="transaction-btn transaction-btn--back"
-                  onClick={() => navigate(`/lgu/${province.slug}/${lgu.slug}`)}
-                >
-                  BACK
-                </button>
-                <button
-                  type="button"
-                  className="transaction-btn transaction-btn--next"
-                  disabled
-                >
-                  NEXT
-                </button>
-              </div>
-            </form>
+                  <div className="transaction-form__actions">
+                    <button
+                      type="button"
+                      className="transaction-btn transaction-btn--back"
+                      onClick={() => navigate(`/lgu/${province.slug}/${lgu.slug}`)}
+                    >
+                      BACK
+                    </button>
+                    <button
+                      type="button"
+                      className="transaction-btn transaction-btn--next"
+                      disabled
+                    >
+                      NEXT
+                    </button>
+                  </div>
+                </form>
+              </>
+            )}
+
+            {(transaction.slug === 'new-business' || transaction.slug === 'renew-business') && (
+              <>
+                <div className="transaction-card__header">
+                  <h3 className="transaction-card__subtitle">Select Application Type</h3>
+                </div>
+
+                <form className="transaction-form" onSubmit={(e) => e.preventDefault()}>
+                  <div className="transaction-form__fields radio-group">
+                    <label className="radio-label">
+                      <input type="radio" name="applicationType" value="new" defaultChecked />
+                      <span>Create New Application</span>
+                    </label>
+                    <label className="radio-label">
+                      <input type="radio" name="applicationType" value="resume" />
+                      <span>Resume Pending Application</span>
+                    </label>
+                  </div>
+
+                  <div className="transaction-form__actions">
+                    <button
+                      type="button"
+                      className="transaction-btn transaction-btn--back"
+                      onClick={() => navigate(`/lgu/${province.slug}/${lgu.slug}`)}
+                    >
+                      CANCEL
+                    </button>
+                    <button
+                      type="button"
+                      className="transaction-btn transaction-btn--primary"
+                    >
+                      NEXT
+                    </button>
+                  </div>
+                </form>
+              </>
+            )}
           </div>
         </div>
       </section>

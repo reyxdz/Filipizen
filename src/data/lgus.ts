@@ -88,6 +88,25 @@ import ragay from '../assets/Images/provinces/camarinesSur/ragay.png';
 import sanFernando from '../assets/Images/provinces/camarinesSur/sanFernando.png';
 import sipocot from '../assets/Images/provinces/camarinesSur/sipocot.png';
 
+// CATANDUANES PROVINCE SEALS //
+import bagamanoc from '../assets/Images/provinces/catanduanes/bagamanoc.png';
+import baras from '../assets/Images/provinces/catanduanes/baras.png';
+import batocat from '../assets/Images/provinces/catanduanes/batocat.png';
+import caramoran from '../assets/Images/provinces/catanduanes/caramoran.png';
+import catanduanesProvince from '../assets/Images/provinces/catanduanes/catanduanesProvince.png';
+import gigmoto from '../assets/Images/provinces/catanduanes/gigmoto.png';
+import pandan from '../assets/Images/provinces/catanduanes/pandan.png';
+import panganiban from '../assets/Images/provinces/catanduanes/panganiban.png';
+import sanAndres from '../assets/Images/provinces/catanduanes/sanAndres.png';
+import sanMiguelCat from '../assets/Images/provinces/catanduanes/sanMiguelCat.png';
+import viga from '../assets/Images/provinces/catanduanes/viga.png';
+import virac from '../assets/Images/provinces/catanduanes/virac.png';
+
+// CEBU PROVINCE SEALS //
+import carmenCebu from '../assets/Images/provinces/cebu/carmen.png';
+import dalaguete from '../assets/Images/provinces/cebu/dalaguete.png';
+import danaoCity from '../assets/Images/provinces/cebu/danaoCity.png';
+
 
 export interface LGU {
   name: string;
@@ -189,5 +208,24 @@ export const lgus: ProvinceLGUs = {
     { name: 'Ragay', seal: ragay, slug: 'ragay' },
     { name: 'San Fernando', seal: sanFernando, slug: 'san-fernando' },
     { name: 'Sipocot', seal: sipocot, slug: 'sipocot' },
+  ],
+  catanduanes: [
+    { name: 'Bagamanoc', seal: bagamanoc, slug: 'bagamanoc' },
+    { name: 'Baras', seal: baras, slug: 'baras' },
+    { name: 'Bato', seal: batocat, slug: 'bato' },
+    { name: 'Caramoran', seal: caramoran, slug: 'caramoran' },
+    { name: 'Catanduanes Province', seal: catanduanesProvince, slug: 'catanduanes-province' },
+    { name: 'Gigmoto', seal: gigmoto, slug: 'gigmoto' },
+    { name: 'Pandan', seal: pandan, slug: 'pandan' },
+    { name: 'Panganiban', seal: panganiban, slug: 'panganiban' },
+    { name: 'San Andres', seal: sanAndres, slug: 'san-andres' },
+    { name: 'San Miguel', seal: sanMiguelCat, slug: 'san-miguel' },
+    { name: 'Viga', seal: viga, slug: 'viga' },
+    { name: 'Virac', seal: virac, slug: 'virac' },
+  ],
+  cebu: [
+    { name: 'Carmen', seal: carmenCebu, slug: 'carmen' },
+    { name: 'Dalaguete', seal: dalaguete, slug: 'dalaguete' },
+    { name: 'Danao City', seal: danaoCity, slug: 'danao-city' },
   ],
 };

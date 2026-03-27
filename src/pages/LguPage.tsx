@@ -69,14 +69,32 @@ function LguPage() {
                 <div key={group.category} className="transaction-group">
                   <h3 className="transaction-group__title">{group.category}</h3>
                   <div className="transaction-list">
-                    {group.items.map((item) => (
-                      <Link to={`/lgu/${province.slug}/${lgu.slug}/transaction/${item.slug}`} key={item.title} className="transaction-item">
-                        <span className="transaction-item__text">{item.title}</span>
-                        <svg className="transaction-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                          <polyline points="9 18 15 12 9 6" />
-                        </svg>
-                      </Link>
-                    ))}
+                    {group.items.map((item) => {
+                      const isAvailable = ['bpls-billing', 'new-business', 'renew-business'].includes(item.slug);
+                      
+                      const content = (
+                        <>
+                          <span className="transaction-item__text">{item.title}</span>
+                          <svg className="transaction-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <polyline points="9 18 15 12 9 6" />
+                          </svg>
+                        </>
+                      );
+                      
+                      if (isAvailable) {
+                        return (
+                          <Link to={`/lgu/${province.slug}/${lgu.slug}/transaction/${item.slug}`} key={item.title} className="transaction-item">
+                            {content}
+                          </Link>
+                        );
+                      }
+                      
+                      return (
+                        <div key={item.title} className="transaction-item transaction-item--disabled" onClick={() => alert("This feature is currently under development.")}>
+                          {content}
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               ))}
