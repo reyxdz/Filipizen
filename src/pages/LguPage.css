@@ -165,16 +165,6 @@
   justify-content: flex-start;
 }
 
-.lgu-transactions__search-btn {
-  color: #7c3aed;
-  border-color: rgba(124, 58, 237, 0.3);
-}
-
-.lgu-transactions__search-btn:hover {
-  background-color: rgba(124, 58, 237, 0.05);
-  border-color: #7c3aed;
-}
-
 /* Not Found */
 .lgu-page__not-found {
   display: flex;
