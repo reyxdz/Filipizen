@@ -174,6 +174,10 @@ import oroquietaCity from '../assets/Images/provinces/misamisOccidental/oroquiet
 import claveria from '../assets/Images/provinces/misamisOriental/claveria.png';
 import tagoloan from '../assets/Images/provinces/misamisOriental/tagoloan.png';
 
+// NEGROS OCCIDENTAL PROVINCE SEALS //
+import cadizCity from '../assets/Images/provinces/negrosOccidental/cadizCity.png';
+import sanCarlosCity from '../assets/Images/provinces/negrosOccidental/sanCarlosCity.png';
+
 
 export interface LGU {
   name: string;
@@ -362,4 +366,8 @@ export const lgus: ProvinceLGUs = {
     { name: 'Claveria', seal: claveria, slug: 'claveria' },
     { name: 'Tagoloan', seal: tagoloan, slug: 'tagoloan' },
   ],
+  negrosOccidental: [
+    { name: 'Cadiz City', seal: cadizCity, slug: 'cadiz-city' },
+    { name: 'San Carlos City', seal: sanCarlosCity, slug: 'san-carlos-city' },
+  ]
 };

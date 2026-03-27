@@ -22,7 +22,7 @@ export const provinces: Province[] = [
   { name: 'Masbate', slug: 'masbate' },
   { name: 'Misamis Occidental', slug: 'misamisOccidental' },
   { name: 'Misamis Oriental', slug: 'misamisOriental' },
-  { name: 'Negros Occidental', slug: 'negros-occidental' },
+  { name: 'Negros Occidental', slug: 'negrosOccidental' },
   { name: 'Negros Oriental', slug: 'negros-oriental' },
   { name: 'Nueva Ecija', slug: 'nueva-ecija' },
   { name: 'Nueva Vizcaya', slug: 'nueva-vizcaya' },
