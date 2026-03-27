@@ -5,7 +5,8 @@
 /* Province Header */
 .province-header {
   position: relative;
-  padding: var(--space-xl) 0; /* Reduced padding from 2xl */
+  padding: var(--space-xl) 0;
+  /* Reduced padding from 2xl */
   background: linear-gradient(135deg, #064E3B 0%, #059669 100%);
   overflow: hidden;
 }
@@ -22,9 +23,9 @@
 .province-header__content {
   position: relative;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: var(--space-xl);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-md);
 }
 
 .province-header__back {
@@ -125,6 +126,7 @@
   .province-header {
     padding: var(--space-lg) 0;
   }
+
   /* Layout already stacks vertically, no need for major overrides */
   .province-header__title {
     font-size: 1.65rem;

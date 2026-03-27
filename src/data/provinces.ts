@@ -5,7 +5,6 @@ export interface Province {
 
 export const provinces: Province[] = [
   { name: 'Aklan', slug: 'aklan' },
-  { name: 'Aklan Terminals', slug: 'aklan-terminals' },
   { name: 'Albay', slug: 'albay' },
   { name: 'Antique', slug: 'antique' },
   { name: 'Bohol', slug: 'bohol' },
