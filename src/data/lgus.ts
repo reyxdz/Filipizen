@@ -19,6 +19,9 @@ import ligaoCity from '../assets/Images/provinces/albay/ligaoCity.png';
 import malinao from '../assets/Images/provinces/albay/malinao.png';
 import tabacoCity from '../assets/Images/provinces/albay/tabacoCity.png';
 
+// ANTIQUE PROVINCE SEALS //
+import sanJoseDeBuenavista from '../assets/Images/provinces/antique/sanJoseDeBuenavista.png';
+
 
 export interface LGU {
   name: string;
@@ -51,5 +54,8 @@ export const lgus: ProvinceLGUs = {
     { name: 'Ligao City', seal: ligaoCity, slug: 'ligao-city' },
     { name: 'Malinao', seal: malinao, slug: 'malinao' },
     { name: 'Tabaco City', seal: tabacoCity, slug: 'tabaco-city' },
+  ],
+  antique: [
+    { name: 'San Jose De Buenavista', seal: sanJoseDeBuenavista, slug: 'san-jose-de-buenavista' },
   ],
 };
