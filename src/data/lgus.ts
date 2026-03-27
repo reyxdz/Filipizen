@@ -129,6 +129,14 @@ import boronganCity from '../assets/Images/provinces/easternSamar/boronganCity.p
 // GENERAL SANTOS PROVINCE SEALS //
 import generalSantosCity from '../assets/Images/provinces/generalSantos/generalSantosCity.png';
 
+// GUIMARAS PROVINCE SEALS //
+import buenavistaGuimaras from '../assets/Images/provinces/guimaras/buenavista.png';
+import guimarasProvince from '../assets/Images/provinces/guimaras/guimarasProvince.png';
+import jordan from '../assets/Images/provinces/guimaras/jordan.png';
+import nuevaValencia from '../assets/Images/provinces/guimaras/nuevaValencia.png';
+import sanLorenzo from '../assets/Images/provinces/guimaras/sanLorenzo.png';
+import sibunag from '../assets/Images/provinces/guimaras/sibunag.png';
+
 
 export interface LGU {
   name: string;
@@ -271,5 +279,13 @@ export const lgus: ProvinceLGUs = {
   ],
   generalSantos: [
     { name: 'General Santos City', seal: generalSantosCity, slug: 'general-santos-city' },
+  ],
+  guimaras: [
+    { name: 'Buenavista', seal: buenavistaGuimaras, slug: 'buenavista' },
+    { name: 'Guimaras Province', seal: guimarasProvince, slug: 'guimaras-province' },
+    { name: 'Jordan', seal: jordan, slug: 'jordan' },
+    { name: 'Nueva Valencia', seal: nuevaValencia, slug: 'nueva-valencia' },
+    { name: 'San Lorenzo', seal: sanLorenzo, slug: 'san-lorenzo' },
+    { name: 'Sibunag', seal: sibunag, slug: 'sibunag' },
   ],
 };
