@@ -24,7 +24,9 @@ function HomePage() {
       <section className="hero">
         <div className="hero__bg-pattern" />
         <div className="hero__content container">
-          <img src={logo} alt="Filipizen Logo" className="hero__logo" />
+          <div className="hero__logo-container">
+            <img src={logo} alt="Filipizen Logo" className="hero__logo" />
+          </div>
           <h1 className="hero__title">
             Your Gateway to <span className="hero__highlight">Online Government Services</span>
           </h1>
