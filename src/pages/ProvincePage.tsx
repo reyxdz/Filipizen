@@ -44,13 +44,14 @@ function ProvincePage() {
             Back
           </button>
           <div className="province-header__text">
-            <h1 className="province-header__title">{province.name}</h1>
-            <span className="province-header__separator">•</span>
-            <p className="province-header__subtitle">
-              {provinceLGUs
-                ? `${provinceLGUs.length} Partner LGUs`
-                : 'Partner LGUs coming soon'}
-            </p>
+            <h1 className="province-header__title">
+              {province.name}
+              <span className="province-header__count">
+                {provinceLGUs
+                  ? `(${provinceLGUs.length} Partner LGUs)`
+                  : '(Coming soon)'}
+              </span>
+            </h1>
           </div>
         </div>
       </section>
