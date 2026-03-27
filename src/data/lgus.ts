@@ -63,6 +63,13 @@ import tubigon from '../assets/Images/provinces/bohol/tubigon.png';
 import ubay from '../assets/Images/provinces/bohol/ubay.png';
 import valencia from '../assets/Images/provinces/bohol/valencia.png';
 
+// BUKIDNON PROVINCE SEALS //
+import bukidnonProvince from '../assets/Images/provinces/bukidnon/bukidnonProvince.png';
+import damulog from '../assets/Images/provinces/bukidnon/damulog.png';
+import dangcagan from '../assets/Images/provinces/bukidnon/dangcagan.png';
+import kibawe from '../assets/Images/provinces/bukidnon/kibawe.png';
+import kitaotao from '../assets/Images/provinces/bukidnon/kitaotao.png';
+
 
 export interface LGU {
   name: string;
@@ -139,5 +146,12 @@ export const lgus: ProvinceLGUs = {
     { name: 'Tubigon', seal: tubigon, slug: 'tubigon' },
     { name: 'Ubay', seal: ubay, slug: 'ubay' },
     { name: 'Valencia', seal: valencia, slug: 'valencia' },
+  ],
+  bukidnon: [
+    { name: 'Bukidnon Province', seal: bukidnonProvince, slug: 'bukidnon-province' },
+    { name: 'Damulog', seal: damulog, slug: 'damulog' },
+    { name: 'Dangcagan', seal: dangcagan, slug: 'dangcagan' },
+    { name: 'Kibawe', seal: kibawe, slug: 'kibawe' },
+    { name: 'Kitaotao', seal: kitaotao, slug: 'kitaotao' },
   ],
 };

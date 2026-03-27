@@ -81,12 +81,12 @@
 
 .transaction-btn--back {
   background: transparent;
-  color: #7c3aed; /* Purple as requested in mockup */
+  color: var(--primary); /* Align with theme */
   padding-left: 0; /* Align perfectly with left edge */
 }
 
 .transaction-btn--back:hover {
-  color: #6d28d9;
+  color: var(--primary-dark);
   text-decoration: underline;
 }
 
