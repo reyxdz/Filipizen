@@ -30,10 +30,11 @@
 }
 
 .navbar__name {
-  font-size: 1.35rem;
-  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
   color: var(--primary-dark);
-  letter-spacing: -0.3px;
+  letter-spacing: -0.5px;
 }
 
 @media (max-width: 768px) {
@@ -47,6 +48,6 @@
   }
 
   .navbar__name {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
   }
 }
