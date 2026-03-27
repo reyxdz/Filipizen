@@ -146,6 +146,18 @@ import sanNicolas from '../assets/Images/provinces/ilocosNorte/sanNicolas.png';
 import sarrat from '../assets/Images/provinces/ilocosNorte/sarrat.png';
 import solsona from '../assets/Images/provinces/ilocosNorte/solsona.png';
 
+// LANAO DEL NORTE PROVINCE SEALS //
+import baroy from '../assets/Images/provinces/lanaoDelNorte/baroy.png';
+import iliganCity from '../assets/Images/provinces/lanaoDelNorte/iliganCity.png';
+import kapatagan from '../assets/Images/provinces/lanaoDelNorte/kapatagan.png';
+import kolambugan from '../assets/Images/provinces/lanaoDelNorte/kolambugan.png';
+import lala from '../assets/Images/provinces/lanaoDelNorte/lala.png';
+import lanaoDelNorteProvince from '../assets/Images/provinces/lanaoDelNorte/lanaoDelNorteProvince.png';
+import linamon from '../assets/Images/provinces/lanaoDelNorte/linamon.png';
+import maigo from '../assets/Images/provinces/lanaoDelNorte/maigo.png';
+import salvador from '../assets/Images/provinces/lanaoDelNorte/salvador.png';
+import tubod from '../assets/Images/provinces/lanaoDelNorte/tubod.png';
+
 
 export interface LGU {
   name: string;
@@ -305,5 +317,17 @@ export const lgus: ProvinceLGUs = {
     { name: 'San Nicolas', seal: sanNicolas, slug: 'san-nicolas' },
     { name: 'Sarrat', seal: sarrat, slug: 'sarrat' },
     { name: 'Solsona', seal: solsona, slug: 'solsona' },
+  ],
+  lanaoDelNorte: [
+    { name: 'Baroy', seal: baroy, slug: 'baroy' },
+    { name: 'Iligan City', seal: iliganCity, slug: 'iligan-city' },
+    { name: 'Kapatagan', seal: kapatagan, slug: 'kapatagan' },
+    { name: 'Kolambugan', seal: kolambugan, slug: 'kolambugan' },
+    { name: 'Lala', seal: lala, slug: 'lala' },
+    { name: 'Lanao del Norte Province', seal: lanaoDelNorteProvince, slug: 'lanao-del-norte-province' },
+    { name: 'Linamon', seal: linamon, slug: 'linamon' },
+    { name: 'Maigo', seal: maigo, slug: 'maigo' },
+    { name: 'Salvador', seal: salvador, slug: 'salvador' },
+    { name: 'Tubod', seal: tubod, slug: 'tubod' },
   ],
 };
