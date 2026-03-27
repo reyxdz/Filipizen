@@ -43,12 +43,15 @@ function ProvincePage() {
             </svg>
             Back
           </button>
-          <h1 className="province-header__title">{province.name}</h1>
-          <p className="province-header__subtitle">
-            {provinceLGUs
-              ? `${provinceLGUs.length} Partner LGUs`
-              : 'Partner LGUs coming soon'}
-          </p>
+          <div className="province-header__text">
+            <h1 className="province-header__title">{province.name}</h1>
+            <span className="province-header__separator">•</span>
+            <p className="province-header__subtitle">
+              {provinceLGUs
+                ? `${provinceLGUs.length} Partner LGUs`
+                : 'Partner LGUs coming soon'}
+            </p>
+          </div>
         </div>
       </section>
 
