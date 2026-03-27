@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -8,7 +8,7 @@ import TransactionPage from './pages/TransactionPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -17,7 +17,7 @@ function App() {
         <Route path="/lgu/:provinceSlug/:lguSlug/transaction/:transactionSlug" element={<TransactionPage />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
