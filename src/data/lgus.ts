@@ -182,6 +182,48 @@ import sanCarlosCity from '../assets/Images/provinces/negrosOccidental/sanCarlos
 import bayawanCity from '../assets/Images/provinces/negrosOriental/bayawanCity.png';
 import tanjayCity from '../assets/Images/provinces/negrosOriental/tanjayCity.png';
 
+// NUEVA ECIJA PROVINCE SEALS //
+import gapanCity from '../assets/Images/provinces/nuevaEcija/gapanCity.png';
+
+// NUEVA VIZCAYA PROVINCE SEALS //
+import bayombong from '../assets/Images/provinces/nuevaVizcaya/bayombong.png';
+import solano from '../assets/Images/provinces/nuevaVizcaya/solano.png';
+
+// PALAWAN PROVINCE SEALS //
+import aborlan from '../assets/Images/provinces/palawan/aborlan.png';
+import narra from '../assets/Images/provinces/palawan/narra.png';
+import palawanProvince from '../assets/Images/provinces/palawan/palawanProvince.png';
+import puertoPrincesaCity from '../assets/Images/provinces/palawan/puertoPrincesaCity.png';
+import sanVicente from '../assets/Images/provinces/palawan/sanVicente.png';
+import taytay from '../assets/Images/provinces/palawan/taytay.png';
+
+// QUEZON PROVINCE SEALS //
+import sariaya from '../assets/Images/provinces/quezon/sariaya.png';
+import tayabasCity from '../assets/Images/provinces/quezon/tayabasCity.png';
+
+// SARANGANI PROVINCE SEALS //
+import alabel from '../assets/Images/provinces/sarangani/alabel.png';
+import glan from '../assets/Images/provinces/sarangani/glan.png';
+import kiamba from '../assets/Images/provinces/sarangani/kiamba.png';
+import maasim from '../assets/Images/provinces/sarangani/maasim.png';
+import maitum from '../assets/Images/provinces/sarangani/maitum.png';
+import malapatan from '../assets/Images/provinces/sarangani/malapatan.png';
+import malungon from '../assets/Images/provinces/sarangani/malungon.png';
+import saranganiProvince from '../assets/Images/provinces/sarangani/saranganiProvince.png';
+
+// SURIGAO DEL NORTE PROVINCE SEALS //
+import surigaoDelNorte from '../assets/Images/provinces/surigaoDelNorte/surigaoDelNorte.png';
+
+// SORSOGON PROVINCE SEALS //
+import sorsogon from '../assets/Images/provinces/sorsogon/sorsogon.png';
+
+// ZAMBOANGA PROVINCE SEALS //
+import zamboangaCity from '../assets/Images/provinces/zamboanga/zamboangaCity.png';
+
+// ZAMBOANGA DEL NORTE SEALS //
+import dapitanCity from '../assets/Images/provinces/zamboangaDelNorte/dapitanCity.png';
+
+
 
 export interface LGU {
   name: string;
@@ -377,5 +419,46 @@ export const lgus: ProvinceLGUs = {
   negrosOriental: [
     { name: 'Bayawan City', seal: bayawanCity, slug: 'bayawan-city' },
     { name: 'Tanjay City', seal: tanjayCity, slug: 'tanjay-city' },
-  ]
+  ],
+  nuevaEcija: [
+    { name: 'Gapan City', seal: gapanCity, slug: 'gapan-city' },
+  ],
+  nuevaVizcaya: [
+    { name: 'Bayombong', seal: bayombong, slug: 'bayombong' },
+    { name: 'Solano', seal: solano, slug: 'solano' },
+  ],
+  palawan: [
+    { name: 'Aborlan', seal: aborlan, slug: 'aborlan' },
+    { name: 'Narra', seal: narra, slug: 'narra' },
+    { name: 'Palawan Province', seal: palawanProvince, slug: 'palawan-province' },
+    { name: 'Puerto Princesa City', seal: puertoPrincesaCity, slug: 'puerto-princesa-city' },
+    { name: 'San Vicente', seal: sanVicente, slug: 'san-vicente' },
+    { name: 'Taytay', seal: taytay, slug: 'taytay' },
+  ],
+  quezon: [
+    { name: 'Sariaya', seal: sariaya, slug: 'sariaya' },
+    { name: 'Tayabas City', seal: tayabasCity, slug: 'tayabas-city' },
+  ],
+  sarangani: [
+    { name: 'Alabel', seal: alabel, slug: 'alabel' },
+    { name: 'Glan', seal: glan, slug: 'glan' },
+    { name: 'Kiamba', seal: kiamba, slug: 'kiamba' },
+    { name: 'Maasim', seal: maasim, slug: 'maasim' },
+    { name: 'Maitum', seal: maitum, slug: 'maitum' },
+    { name: 'Malapatan', seal: malapatan, slug: 'malapatan' },
+    { name: 'Malungon', seal: malungon, slug: 'malungon' },
+    { name: 'Sarangani Province', seal: saranganiProvince, slug: 'sarangani-province' },
+  ],
+  surigaoDelNorte: [
+    { name: 'Surigao del Norte Province', seal: surigaoDelNorte, slug: 'surigao-del-norte-province' },
+  ],
+  sorsogon: [
+    { name: 'Sorsogon Province', seal: sorsogon, slug: 'sorsogon-province' },
+  ],
+  zamboanga: [
+    { name: 'Zamboanga City', seal: zamboangaCity, slug: 'zamboanga-city' },
+  ],
+  zamboangaDelNorte: [
+    { name: 'Dapitan City', seal: dapitanCity, slug: 'dapitan-city' },
+  ],
 };
