@@ -162,13 +162,17 @@ import tubod from '../assets/Images/provinces/lanaoDelNorte/tubod.png';
 import aroroy from '../assets/Images/provinces/masbate/aroroy.png';
 import masbateCity from '../assets/Images/provinces/masbate/masbateCity.png';
 
-// MISAMIS OCCIDENTAL SEALS //
+// MISAMIS OCCIDENTAL PROVINCE SEALS //
 import baliangao from '../assets/Images/provinces/misamisOccidental/baliangao.png';
 import clarin from '../assets/Images/provinces/misamisOccidental/clarin.png';
 import donVictoriano from '../assets/Images/provinces/misamisOccidental/donVictoriano.png';
 import lopezJaena from '../assets/Images/provinces/misamisOccidental/lopezJaena.png';
 import misamisOccidentalProvince from '../assets/Images/provinces/misamisOccidental/misamisOccidentalProvince.png';
 import oroquietaCity from '../assets/Images/provinces/misamisOccidental/oroquietaCity.png';
+
+// MISAMIS ORIENTAL PROVINCE SEALS //
+import claveria from '../assets/Images/provinces/misamisOriental/claveria.png';
+import tagoloan from '../assets/Images/provinces/misamisOriental/tagoloan.png';
 
 
 export interface LGU {
@@ -353,5 +357,9 @@ export const lgus: ProvinceLGUs = {
     { name: 'Lopez Jaena', seal: lopezJaena, slug: 'lopez-jaena' },
     { name: 'Misamis Occidental Province', seal: misamisOccidentalProvince, slug: 'misamis-occidental-province' },
     { name: 'Oroquieta City', seal: oroquietaCity, slug: 'oroquieta-city' },
+  ],
+  misamisOriental: [
+    { name: 'Claveria', seal: claveria, slug: 'claveria' },
+    { name: 'Tagoloan', seal: tagoloan, slug: 'tagoloan' },
   ],
 };
