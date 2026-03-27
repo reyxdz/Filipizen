@@ -13,7 +13,7 @@ export const provinces: Province[] = [
   { name: 'Catanduanes', slug: 'catanduanes' },
   { name: 'Cebu', slug: 'cebu' },
   { name: 'Davao Oriental', slug: 'davaoOriental' },
-  { name: 'Davao del Norte', slug: 'davao-del-norte' },
+  { name: 'Davao del Norte', slug: 'davaoDelNorte' },
   { name: 'Eastern Samar', slug: 'eastern-samar' },
   { name: 'General Santos', slug: 'general-santos' },
   { name: 'Guimaras', slug: 'guimaras' },

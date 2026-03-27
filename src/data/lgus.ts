@@ -111,6 +111,18 @@ import danaoCity from '../assets/Images/provinces/cebu/danaoCity.png';
 import banaybanay from '../assets/Images/provinces/davaoOriental/banaybanay.png';
 import davaoOrientalProvince from '../assets/Images/provinces/davaoOriental/davaoOrientalProvince.png';
 
+// DAVAO DEL NORTE PROVINCE SEALS //
+import asuncion from '../assets/Images/provinces/davaoDelNorte/asuncion.png';
+import braulioEDujali from '../assets/Images/provinces/davaoDelNorte/braulioEDujali.png';
+import carmenDavaoDelNorte from '../assets/Images/provinces/davaoDelNorte/carmenDavaoDelNorte.png';
+import davaoDelNorteProvince from '../assets/Images/provinces/davaoDelNorte/davaoDelNorteProvince.png';
+import kapalong from '../assets/Images/provinces/davaoDelNorte/kapalong.png';
+import newCorella from '../assets/Images/provinces/davaoDelNorte/newCorella.png';
+import panaboCity from '../assets/Images/provinces/davaoDelNorte/panaboCity.png';
+import sanIsidroDavaoDelNorte from '../assets/Images/provinces/davaoDelNorte/sanIsidroDavaoDelNorte.png';
+import stoTomas from '../assets/Images/provinces/davaoDelNorte/stoTomas.png';
+import talaingod from '../assets/Images/provinces/davaoDelNorte/talaingod.png';
+
 
 export interface LGU {
   name: string;
@@ -235,5 +247,17 @@ export const lgus: ProvinceLGUs = {
   davaoOriental: [
     { name: 'Banaybanay', seal: banaybanay, slug: 'banay-banay' },
     { name: 'Davao Oriental Province', seal: davaoOrientalProvince, slug: 'davao-oriental-province' },
+  ],
+  davaoDelNorte: [
+    { name: 'Asuncion', seal: asuncion, slug: 'asuncion' },
+    { name: 'Braulio E. Dujali', seal: braulioEDujali, slug: 'braulio-e-dujali' },
+    { name: 'Carmen', seal: carmenDavaoDelNorte, slug: 'carmen' },
+    { name: 'Davao del Norte Province', seal: davaoDelNorteProvince, slug: 'davao-del-norte-province' },
+    { name: 'Kapalong', seal: kapalong, slug: 'kapalong' },
+    { name: 'New Corella', seal: newCorella, slug: 'new-corella' },
+    { name: 'Panabo City', seal: panaboCity, slug: 'panabo-city' },
+    { name: 'San Isidro', seal: sanIsidroDavaoDelNorte, slug: 'san-isidro' },
+    { name: 'Santo Tomas', seal: stoTomas, slug: 'santo-tomas' },
+    { name: 'Talaingod', seal: talaingod, slug: 'talaingod' },
   ],
 };

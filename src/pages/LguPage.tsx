@@ -70,7 +70,7 @@ function LguPage() {
                   <h3 className="transaction-group__title">{group.category}</h3>
                   <div className="transaction-list">
                     {group.items.map((item) => {
-                      const isAvailable = ['bpls-billing', 'new-business', 'renew-business'].includes(item.slug);
+                      const isAvailable = ['bpls-billing', 'rpt-billing', 'new-business', 'renew-business', 'online-payment-order'].includes(item.slug);
                       
                       const content = (
                         <>

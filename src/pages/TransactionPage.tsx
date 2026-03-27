@@ -75,7 +75,7 @@ function TransactionPage() {
               {transaction.slug !== 'new-business' && transaction.slug !== 'renew-business' && transaction.title}
             </h2>
             
-            {transaction.slug === 'bpls-billing' && (
+            {(transaction.slug === 'bpls-billing' || transaction.slug === 'rpt-billing' || transaction.slug === 'online-payment-order') && (
               <>
                 <div className="transaction-card__header">
                   <h3 className="transaction-card__subtitle">Email Verification</h3>
