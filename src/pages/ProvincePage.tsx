@@ -48,7 +48,7 @@ function ProvincePage() {
               {province.name}
               <span className="province-header__count">
                 {provinceLGUs
-                  ? `(${provinceLGUs.length} Partner LGUs)`
+                  ? ` — ${provinceLGUs.length} Partner LGUs`
                   : '(Coming soon)'}
               </span>
             </h1>
