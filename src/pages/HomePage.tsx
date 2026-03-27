@@ -28,7 +28,8 @@ function HomePage() {
             <img src={logo} alt="Filipizen Logo" className="hero__logo" />
           </div>
           <h1 className="hero__title">
-            Your Gateway to <span className="hero__highlight">Online Government Services</span>
+            Your Gateway to <br />
+            <span className="hero__highlight">Online Government Services</span>
           </h1>
           <p className="hero__subtitle">
             Search and access partner LGU services across the Philippines
