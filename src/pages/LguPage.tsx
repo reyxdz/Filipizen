@@ -35,6 +35,13 @@ function LguPage() {
       <section className="lgu-header">
         <div className="lgu-header__bg-pattern" />
         <div className="container lgu-header__content">
+          <div className="lgu-header__title-row">
+            <div className="lgu-header__seal-wrapper">
+              <img src={lgu.seal} alt={`${lgu.name} Seal`} className="lgu-header__seal" />
+            </div>
+            <h1 className="lgu-header__title">{lgu.name}</h1>
+          </div>
+
           <button
             className="lgu-header__back"
             onClick={() => navigate(`/province/${province.slug}`)}
@@ -46,13 +53,6 @@ function LguPage() {
             </svg>
             Back to {province.name}
           </button>
-          
-          <div className="lgu-header__title-row">
-            <div className="lgu-header__seal-wrapper">
-              <img src={lgu.seal} alt={`${lgu.name} Seal`} className="lgu-header__seal" />
-            </div>
-            <h1 className="lgu-header__title">{lgu.name}</h1>
-          </div>
         </div>
       </section>
 
