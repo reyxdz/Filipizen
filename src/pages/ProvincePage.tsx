@@ -66,6 +66,7 @@ function ProvincePage() {
                   key={lgu.slug}
                   image={lgu.seal}
                   title={lgu.name}
+                  onClick={() => navigate(`/lgu/${province.slug}/${lgu.slug}`)}
                 />
               ))}
             </div>
