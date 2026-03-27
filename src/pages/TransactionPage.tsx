@@ -3,7 +3,7 @@ import Input from '../components/Input';
 import Button from '../components/Button';
 import { provinces } from '../data/provinces';
 import { lgus } from '../data/lgus';
-import { lguTransactions, Transaction } from '../data/transactions';
+import { lguTransactions, type Transaction } from '../data/transactions';
 import './TransactionPage.css';
 
 function TransactionPage() {
