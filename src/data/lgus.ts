@@ -137,6 +137,15 @@ import nuevaValencia from '../assets/Images/provinces/guimaras/nuevaValencia.png
 import sanLorenzo from '../assets/Images/provinces/guimaras/sanLorenzo.png';
 import sibunag from '../assets/Images/provinces/guimaras/sibunag.png';
 
+// ILOCOS NORTE PROVINCE SEALS //
+import ilocosNorte from '../assets/Images/provinces/ilocosNorte/ilocosNorte.png';
+import marcos from '../assets/Images/provinces/ilocosNorte/marcos.png';
+import pagudpud from '../assets/Images/provinces/ilocosNorte/pagudpud.png';
+import piddig from '../assets/Images/provinces/ilocosNorte/piddig.png';
+import sanNicolas from '../assets/Images/provinces/ilocosNorte/sanNicolas.png';
+import sarrat from '../assets/Images/provinces/ilocosNorte/sarrat.png';
+import solsona from '../assets/Images/provinces/ilocosNorte/solsona.png';
+
 
 export interface LGU {
   name: string;
@@ -287,5 +296,14 @@ export const lgus: ProvinceLGUs = {
     { name: 'Nueva Valencia', seal: nuevaValencia, slug: 'nueva-valencia' },
     { name: 'San Lorenzo', seal: sanLorenzo, slug: 'san-lorenzo' },
     { name: 'Sibunag', seal: sibunag, slug: 'sibunag' },
+  ],
+  ilocosNorte: [
+    { name: 'Ilocos Norte Province', seal: ilocosNorte, slug: 'ilocos-norte-province' },
+    { name: 'Marcos', seal: marcos, slug: 'marcos' },
+    { name: 'Pagudpud', seal: pagudpud, slug: 'pagudpud' },
+    { name: 'Piddig', seal: piddig, slug: 'piddig' },
+    { name: 'San Nicolas', seal: sanNicolas, slug: 'san-nicolas' },
+    { name: 'Sarrat', seal: sarrat, slug: 'sarrat' },
+    { name: 'Solsona', seal: solsona, slug: 'solsona' },
   ],
 };

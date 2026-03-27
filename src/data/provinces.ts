@@ -17,7 +17,7 @@ export const provinces: Province[] = [
   { name: 'Eastern Samar', slug: 'easternSamar' },
   { name: 'General Santos', slug: 'generalSantos' },
   { name: 'Guimaras', slug: 'guimaras' },
-  { name: 'Ilocos Norte', slug: 'ilocos-norte' },
+  { name: 'Ilocos Norte', slug: 'ilocosNorte' },
   { name: 'Lanao del Norte', slug: 'lanao-del-norte' },
   { name: 'Masbate', slug: 'masbate' },
   { name: 'Misamis Occidental', slug: 'misamis-occidental' },
