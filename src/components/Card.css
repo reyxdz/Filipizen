@@ -76,11 +76,19 @@
 }
 
 .card__title {
-  font-size: 1.5rem; /* Larger font size as requested */
-  font-weight: 700;
   color: var(--primary-dark);
   margin: 0;
+}
+
+.card--with-image .card__title {
+  font-size: 1.5rem; /* Larger font size as requested */
+  font-weight: 700;
   letter-spacing: -0.5px;
+}
+
+.card--text-only .card__title {
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 .card__subtitle {
