@@ -32,6 +32,17 @@ function ProvincePage() {
       <section className="province-header">
         <div className="province-header__bg-pattern" />
         <div className="container province-header__content">
+          <div className="province-header__text">
+            <h1 className="province-header__title">
+              {province.name}
+              <span className="province-header__count">
+                {provinceLGUs
+                  ? ` — ${provinceLGUs.length} Partner LGUs`
+                  : '(Coming soon)'}
+              </span>
+            </h1>
+          </div>
+
           <button
             className="province-header__back"
             onClick={() => navigate('/')}
@@ -43,16 +54,6 @@ function ProvincePage() {
             </svg>
             Back
           </button>
-          <div className="province-header__text">
-            <h1 className="province-header__title">
-              {province.name}
-              <span className="province-header__count">
-                {provinceLGUs
-                  ? ` — ${provinceLGUs.length} Partner LGUs`
-                  : '(Coming soon)'}
-              </span>
-            </h1>
-          </div>
         </div>
       </section>
 

@@ -23,9 +23,10 @@
 .province-header__content {
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--space-md);
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
 }
 
 .province-header__back {
