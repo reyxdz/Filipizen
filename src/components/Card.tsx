@@ -11,7 +11,7 @@ interface CardProps {
 function Card({ image, title, subtitle, onClick, className = '' }: CardProps) {
   return (
     <div
-      className={`card ${onClick ? 'card--clickable' : ''} ${className}`}
+      className={`card ${image ? 'card--with-image' : 'card--text-only'} ${onClick ? 'card--clickable' : ''} ${className}`}
       onClick={onClick}
       role={onClick ? 'button' : undefined}
       tabIndex={onClick ? 0 : undefined}

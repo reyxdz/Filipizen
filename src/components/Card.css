@@ -51,13 +51,28 @@
 
 .card__content {
   flex: 1;
-  text-align: left; /* Align text to the left */
-  /* Add the vertical divider */
-  border-left: 2px solid var(--primary-dark);
-  padding-left: var(--space-lg);
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.card--with-image .card__content {
+  text-align: left;
+  border-left: 2px solid var(--primary-dark);
+  padding-left: var(--space-lg);
+  align-items: flex-start;
+}
+
+.card--text-only {
+  justify-content: center;
+  padding: var(--space-lg) var(--space-md);
+}
+
+.card--text-only .card__content {
+  text-align: center;
+  align-items: center;
+  border-left: none;
+  padding-left: 0;
 }
 
 .card__title {
