@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import Button from '../components/Button';
 import { provinces } from '../data/provinces';
 import { lgus } from '../data/lgus';
@@ -70,12 +70,12 @@ function LguPage() {
                   <h3 className="transaction-group__title">{group.category}</h3>
                   <div className="transaction-list">
                     {group.items.map((item) => (
-                      <a href={item.path} key={item.title} className="transaction-item">
+                      <Link to={`/lgu/${province.slug}/${lgu.slug}/transaction/${item.slug}`} key={item.title} className="transaction-item">
                         <span className="transaction-item__text">{item.title}</span>
                         <svg className="transaction-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                           <polyline points="9 18 15 12 9 6" />
                         </svg>
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>

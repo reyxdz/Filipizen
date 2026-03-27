@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ProvincePage from './pages/ProvincePage';
 import LguPage from './pages/LguPage';
+import TransactionPage from './pages/TransactionPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/province/:slug" element={<ProvincePage />} />
         <Route path="/lgu/:provinceSlug/:lguSlug" element={<LguPage />} />
+        <Route path="/lgu/:provinceSlug/:lguSlug/transaction/:transactionSlug" element={<TransactionPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
