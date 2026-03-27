@@ -158,6 +158,18 @@ import maigo from '../assets/Images/provinces/lanaoDelNorte/maigo.png';
 import salvador from '../assets/Images/provinces/lanaoDelNorte/salvador.png';
 import tubod from '../assets/Images/provinces/lanaoDelNorte/tubod.png';
 
+// MASBATE PROVINCE SEALS //
+import aroroy from '../assets/Images/provinces/masbate/aroroy.png';
+import masbateCity from '../assets/Images/provinces/masbate/masbateCity.png';
+
+// MISAMIS OCCIDENTAL SEALS //
+import baliangao from '../assets/Images/provinces/misamisOccidental/baliangao.png';
+import clarin from '../assets/Images/provinces/misamisOccidental/clarin.png';
+import donVictoriano from '../assets/Images/provinces/misamisOccidental/donVictoriano.png';
+import lopezJaena from '../assets/Images/provinces/misamisOccidental/lopezJaena.png';
+import misamisOccidentalProvince from '../assets/Images/provinces/misamisOccidental/misamisOccidentalProvince.png';
+import oroquietaCity from '../assets/Images/provinces/misamisOccidental/oroquietaCity.png';
+
 
 export interface LGU {
   name: string;
@@ -329,5 +341,17 @@ export const lgus: ProvinceLGUs = {
     { name: 'Maigo', seal: maigo, slug: 'maigo' },
     { name: 'Salvador', seal: salvador, slug: 'salvador' },
     { name: 'Tubod', seal: tubod, slug: 'tubod' },
+  ],
+  masbate: [
+    { name: 'Aroroy', seal: aroroy, slug: 'aroroy' },
+    { name: 'Masbate City', seal: masbateCity, slug: 'masbate-city' },
+  ],
+  misamisOccidental: [
+    { name: 'Baliangao', seal: baliangao, slug: 'baliangao' },
+    { name: 'Clarin', seal: clarin, slug: 'clarin' },
+    { name: 'Don Victoriano', seal: donVictoriano, slug: 'don-victoriano' },
+    { name: 'Lopez Jaena', seal: lopezJaena, slug: 'lopez-jaena' },
+    { name: 'Misamis Occidental Province', seal: misamisOccidentalProvince, slug: 'misamis-occidental-province' },
+    { name: 'Oroquieta City', seal: oroquietaCity, slug: 'oroquieta-city' },
   ],
 };
