@@ -56,10 +56,36 @@
   justify-content: center;
 }
 
+/* LGU Cards (Image + Text) - Modern Redesign */
+.card--with-image {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  padding: 16px 20px 16px 16px;
+  gap: 20px;
+}
+
+.card--with-image:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(5, 150, 105, 0.08);
+  border-color: rgba(5, 150, 105, 0.15);
+}
+
+.card--with-image .card__image-container {
+  width: 76px;
+  height: 76px;
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
 .card--with-image .card__content {
   text-align: left;
-  border-left: 2px solid var(--primary-dark);
-  padding-left: var(--space-lg);
+  border-left: none; /* Remove harsh divider */
+  padding-left: 0;
   align-items: flex-start;
 }
 
@@ -81,9 +107,10 @@
 }
 
 .card--with-image .card__title {
-  font-size: 1.5rem; /* Larger font size as requested */
+  font-size: 1.25rem; /* Clean, modern size */
   font-weight: 700;
-  letter-spacing: -0.5px;
+  color: var(--text-h); /* Darker, more neutral color for premium feel */
+  letter-spacing: -0.3px;
 }
 
 .card--text-only .card__title {
