@@ -126,6 +126,9 @@ import talaingod from '../assets/Images/provinces/davaoDelNorte/talaingod.png';
 // EASTERN SAMAR PROVINCE SEALS //
 import boronganCity from '../assets/Images/provinces/easternSamar/boronganCity.png';
 
+// GENERAL SANTOS PROVINCE SEALS //
+import generalSantosCity from '../assets/Images/provinces/generalSantos/generalSantosCity.png';
+
 
 export interface LGU {
   name: string;
@@ -265,5 +268,8 @@ export const lgus: ProvinceLGUs = {
   ],
   easternSamar: [
     { name: 'Borongan City', seal: boronganCity, slug: 'borongan-city' },
+  ],
+  generalSantos: [
+    { name: 'General Santos City', seal: generalSantosCity, slug: 'general-santos-city' },
   ],
 };

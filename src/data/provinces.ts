@@ -15,7 +15,7 @@ export const provinces: Province[] = [
   { name: 'Davao Oriental', slug: 'davaoOriental' },
   { name: 'Davao del Norte', slug: 'davaoDelNorte' },
   { name: 'Eastern Samar', slug: 'easternSamar' },
-  { name: 'General Santos', slug: 'general-santos' },
+  { name: 'General Santos', slug: 'generalSantos' },
   { name: 'Guimaras', slug: 'guimaras' },
   { name: 'Ilocos Norte', slug: 'ilocos-norte' },
   { name: 'Lanao del Norte', slug: 'lanao-del-norte' },
